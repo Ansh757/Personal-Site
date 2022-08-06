@@ -1,0 +1,374 @@
+
+body {
+    color: #212121;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: #DBE2EF;
+    font-weight: lighter;
+}
+
+h1 {
+    color: #F9F7F7;
+    font-size: 4.8rem;
+    font-family: 'Allura', cursive;
+    margin: 50px 100px auto auto;
+}
+
+#profile-section h2 {
+    color: #3F72AF;
+}
+
+h2 {
+    color: #112D4E;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Header */
+
+#main-header {
+    background-color: #00092C;
+    height: 700px;
+    margin: auto;
+}
+
+.header-img {
+    padding-top: 30px;
+}
+
+#main-header h1 {
+    margin-top: 275px;
+    margin-left: 100px;
+}
+
+#main-header img {
+    width: 1250px;
+    height: 450px;
+    position: absolute;
+    margin-left: -600px;
+    margin-top: 100px;
+    border-radius: 100px;
+}
+
+/* Profile Section */
+
+#profile-section {
+    background-color: #DBE2EF;
+    color: #000000;
+    padding: 40px 0 40px 0;
+    height: 300px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.profile-picture {
+    border-radius: 100px;
+    float: left;
+    margin: auto 20px auto 20px;
+}
+
+.first-section {
+    margin: 25px auto 20px auto;
+    text-align: left;
+    width: 60%;
+}
+
+.sub-heading {
+    padding: 15px;
+}
+
+/* Projects Section */
+
+#project-section h3 {
+    margin-top: 10px;
+    color: rgb(255, 136, 0);
+}
+
+#project-section {
+    padding: 40px 0 40px 0;
+    background-color: #3F72AF;
+    color: white;
+}
+
+#project-section p {
+    margin: 0;
+    margin-bottom: 18.72px;
+}
+
+.middle-container {
+    position: absolute;
+    width: 100%;
+}
+
+.proj1, .proj2, .proj3, .proj4 {
+    width: 60%;
+    margin: 42px auto 150px auto;
+    line-height: 1.75;
+}
+
+.proj1, .proj3 {
+    text-align: left;
+    
+}
+
+.proj2, .proj4 {
+    text-align: right;
+
+}
+
+.project-1, .project-2, .project-3, .project-4 {
+    width: 30%;
+}
+
+.project-1, .project-3 {
+    float: left;
+    margin-right: 30px;
+}
+
+.project-2, .project-4 {
+    float: right;
+    margin-left: 30px;
+}
+
+/* Skills Section */
+#roadmap__container {
+    position: relative;
+}
+
+#roadmap {
+    padding: 0;
+    position: relative;
+    margin: 20px auto 0 auto;
+    /* list-style: none; */
+}
+
+#roadmap #endpoint {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: blue;
+}
+
+#roadmap::before {
+    content: "";
+    background-color: #252525;
+    height: calc(100% - 20px);
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translate3D(-50%, 0, 0);
+    z-index: 0;
+    width: 2px;
+}
+
+#roadmap .__item {
+    width: 100%;
+    position: relative;
+}
+
+#roadmap .__item .text {
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    background: #3F72AF;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4),
+        2px 4px 9px 5px rgba(0, 0, 0, 0.09);
+    margin-left: 375px;
+    margin-right: 375px;
+}
+
+#roadmap .__item .text b {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    color: white;
+}
+
+#roadmap .__item .text span {
+    color: white;
+    font-size: 1.13em;
+    display: inline-block;
+}
+
+#roadmap .__item .text hr {
+    margin: 10px 0;
+}
+
+#roadmap .__item.__left {
+    text-align: left;
+    transform: translateZ(0) translateX(-200%);
+    transition: transform 0.6s ease;
+}
+
+#roadmap .__item.__right {
+    text-align: right;
+    transform: translateZ(0) translateX(200%);
+    transition: transform 0.6s ease;
+}
+
+#roadmap .__item.__left .text {
+    border-right: 4px solid rgb(4, 0, 255);
+}
+
+#roadmap .__item.__right .text {
+    border-left: 4px solid rgb(4, 0, 255);
+}
+
+#roadmap .__item.__left .connector,
+#roadmap .__item.__right .connector {
+    width: 0px;
+    transition: width 0.8s ease;
+    will-change: width;
+}
+
+#roadmap .__item.__left .connector {
+    position: absolute;
+    background-color: #252525;
+    height: 2px;
+    bottom: 50%;
+}
+
+#roadmap .__item.__right .connector {
+    position: absolute;
+    background-color: #252525;
+    height: 2px;
+    bottom: 50%;
+}
+
+#roadmap .__item.__left .connector::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 4px solid rgb(4, 0, 255);
+    background-color: #fff;
+    border-radius: 50%;
+    left: -12px;
+    transform: translate3d(0, -50%, 0);
+}
+
+#roadmap .__item.__left .connector::after {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border: 2px solid rgb(4, 0, 255);
+    background-color: #fff;
+    border-radius: 50%;
+    right: -6px;
+    z-index: 3;
+    transform: translate3d(0, -50%, 0);
+}
+
+#roadmap .__item.__right .connector::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 4px solid rgb(4, 0, 255);
+    background-color: #fff;
+    border-radius: 50%;
+    right: -12px;
+    transform: translate3d(0, -50%, 0);
+}
+
+#roadmap .__item.__right .connector::after {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border: 2px solid rgb(4, 0, 255);
+    background-color: #fff;
+    border-radius: 50%;
+    left: -6px;
+    z-index: 3;
+    transform: translate3d(0, -50%, 0);
+}
+
+#roadmap .__goals .__the_goals {
+    display: block;
+    width: 300px;
+    margin: 100px auto 50px auto;
+    padding: 20px 0;
+    background: orange;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+#roadmap .__goals .__the_goals:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    border-bottom: 25px solid orange;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+}
+
+#roadmap .__goals .__the_goals:after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 100%;
+    border-top: 25px solid orange;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    filter: drop-shadow(0px 14px 3px rgba(0, 0, 0, 0.5));
+}
+
+#roadmap .__goals .__the_goals b {
+    display: block;
+    margin-top: 65px;
+    font-size: 1.4em;
+}
+
+#roadmap .__goals .__the_goals ul {
+    padding: 0 50px;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+#roadmap .__goals .__the_goals ul li {
+    padding: 0;
+    margin: 5px 0;
+    list-style-type: disc;
+}
+
+#roadmap .__goals .__coin {
+    position: absolute;
+    width: 150px;
+    left: 50%;
+    top: -75px;
+    transform: translateX(-50%);
+    filter: drop-shadow(0px 0px 10px rgba(247, 255, 255, 0.3));
+
+    z-index: 4;
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* Footer */
+.bottom-container {
+    background-color: #00092C;
+    color: white;
+    font-family: 'Kantumruy Pro', sans-serif;
+    height: 150px;
+    position: relative;
+    width: 100%;
+    padding-top: 65px;
+    margin-top: 25px;
+    font-weight: bold;
+}
